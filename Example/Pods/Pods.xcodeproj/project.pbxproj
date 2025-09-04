@@ -1,0 +1,1253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C520112CBE951086C70C7E7454E1E8D /* Build configuration list for PBXAggregateTarget "KSAdSDK" */;
+			buildPhases = (
+				5A8259F6757B3ADD322D7FAEB90C60B6 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = KSAdSDK;
+		};
+		6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 78741371A3F2A9B3F3B5D2079C6FC6E4 /* Build configuration list for PBXAggregateTarget "GDTMobSDK" */;
+			buildPhases = (
+				A898C4D2EDC42356AF1A6C968411C06D /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = GDTMobSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		21AB5CC7FD854DE2024A2C7F1D804495 /* TxAdSupportKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D53F19D1AA2765FC3617673B24E0F0 /* TxAdSupportKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		233ECF0432257A1C6A3896CF2D058866 /* Pods-TxAdSupportKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE134153BDE03321566BA13CCB8CF40A /* Pods-TxAdSupportKit_Tests-dummy.m */; };
+		2F100C830E8ED957C50C957C7A50364A /* TxBannerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7380C646E6F1C6FC72DA72B9F26216C /* TxBannerProvider.swift */; };
+		2FBE07B1F50F2514519ECACCC298708F /* Pods-TxAdSupportKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4740196F5F401659BC3B6A00F3CAC94D /* Pods-TxAdSupportKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42BEF9F5F1A556CFF095144A9BF61B6D /* TxFeedFlowAdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CAB4B146D7542EA6C31099832E447A /* TxFeedFlowAdProvider.swift */; };
+		4E604FC7D0DB2202834B74D5597D0DAB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 51E433E116749F5F039A1067096439CF /* PrivacyInfo.xcprivacy */; };
+		502CEAF57638FE66C5F421E00FE2D84C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		5EC6FAF75C070AC4872B30EC1C8B46AF /* Pods-TxAdSupportKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D597292A0C0260BEA93DCA1776ABAD /* Pods-TxAdSupportKit_Example-dummy.m */; };
+		64AEAF1CD7A2EBEB539EE8E77EDC4C44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		658D19CFE573A5F1120E0DB5F12EBEA8 /* TxAdSupportKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EA7BF8C963D58D8987B1B0724D07727 /* TxAdSupportKit-dummy.m */; };
+		6AD24D940112F8F3E81E4CD29D9EC121 /* TxRewardADProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF31D779E2BFAA3F1DFA8140A4BCFC07 /* TxRewardADProvider.swift */; };
+		A1676974D963E694A15D946380BA83B6 /* TxInterstitialHalfAdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507035DEC66AA0C9C475B331B9F108DB /* TxInterstitialHalfAdProvider.swift */; };
+		A25FD3C9AC826E0B82F6041DAE35FC79 /* Pods-TxAdSupportKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA5A6761741C1684F4846A82EE1365AD /* Pods-TxAdSupportKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4D87F8F4F3D5FBDD39ED6A932E2D9E8 /* TxInterstitialFullAdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0490175F4512ED61622AD5210C87CACD /* TxInterstitialFullAdProvider.swift */; };
+		AC929315FF50CDBE602C4AEFE0C23A3E /* CSJAdSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E27D9FCEBF7E8E3F7DF457694DCD638 /* CSJAdSDK.bundle */; };
+		B74654D810BE771464BFD4E3663CDAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		C0AEFEC0D6652382A6853F4E592C2F0F /* TxAdSupportKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D26D76B84B4B63307EFF769F2DF7B693 /* TxAdSupportKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9F7382B65EE25460743BBA448E9EF9F /* TxAdSupportInitProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540225C8FF373BFA55EA9B211A963741 /* TxAdSupportInitProvider.swift */; };
+		F33DC3FBEE086A6C55F271BA03728069 /* TxAdSupportKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA561F3DFAEDA080007E46DF4437C4 /* TxAdSupportKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DD4BBCDAE7238A24C8484E6CF12D659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A71A5C12A448F71659E5328E99AB86;
+			remoteInfo = "Pods-TxAdSupportKit_Example";
+		};
+		A20FC4361A8AED72399DAF4323380F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2346F0EAB232ED672D998FFDB74E77C6;
+			remoteInfo = TxAdSupportKit;
+		};
+		BD615C3D961E1A6B918E0405EFAFE0E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
+			remoteInfo = KSAdSDK;
+		};
+		CE3A5983514DCD1049AF90CF41ED98D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAC5F2FEBD7585691654C539EBBFEAC8;
+			remoteInfo = "TxAdSupportKit-TxAdSupportKit";
+		};
+		D5C067A979D1446F74042EF940666705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
+			remoteInfo = GDTMobSDK;
+		};
+		DF0661F6552862AF69079A5E2447A418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53DB8EFBB54B636ACDC70272323792EC;
+			remoteInfo = KSAdSDK;
+		};
+		FEEA14712A20C936880AD383E575FD4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
+			remoteInfo = GDTMobSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0490175F4512ED61622AD5210C87CACD /* TxInterstitialFullAdProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxInterstitialFullAdProvider.swift; path = TxAdSupportKit/Classes/TxInterstitialFullAdProvider.swift; sourceTree = "<group>"; };
+		0E27D9FCEBF7E8E3F7DF457694DCD638 /* CSJAdSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CSJAdSDK.bundle; path = TxAdSupportKit/Assets/CSJAdSDK.bundle; sourceTree = "<group>"; };
+		12C33D06398583DF2276902BD99B0DEC /* Pods-TxAdSupportKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TxAdSupportKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		1EA7BF8C963D58D8987B1B0724D07727 /* TxAdSupportKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TxAdSupportKit-dummy.m"; sourceTree = "<group>"; };
+		24B406EFA279318AA8F05580DDD1C1D8 /* KSAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.debug.xcconfig; sourceTree = "<group>"; };
+		2C586013E10713945BD9DE98FC14CCF0 /* Pods-TxAdSupportKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TxAdSupportKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2E69C190C86D6CE873F6C986B0054B94 /* Pods-TxAdSupportKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TxAdSupportKit_Example.modulemap"; sourceTree = "<group>"; };
+		2F86A156AD1B1574B4570597F52D74B7 /* GDTMobSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "GDTMobSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		30ADA4C563C3F8D25224D5D2D054E4FC /* Pods-TxAdSupportKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TxAdSupportKit_Example-Info.plist"; sourceTree = "<group>"; };
+		362B0A7E917BEBBDCC6599CE23E43D4C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3ACC55B24CC3CC7531A563F92528D0B1 /* Pods-TxAdSupportKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TxAdSupportKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E20ED61F5FE1E0A8DE418AC27E9AC8E /* Pods-TxAdSupportKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TxAdSupportKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3F7CDD000492908755778F00D684D54B /* CSJMKsAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CSJMKsAdapter.xcframework; path = TxAdSupportKit/ADSupportSDKs/CSJMKsAdapter.xcframework; sourceTree = "<group>"; };
+		45F5CD5F201A9A97F4768194105511B9 /* KSAdSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "KSAdSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		470307E4E9AA1FDC7D60552229F5C8B4 /* KSAdSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KSAdSDK.release.xcconfig; sourceTree = "<group>"; };
+		4740196F5F401659BC3B6A00F3CAC94D /* Pods-TxAdSupportKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TxAdSupportKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		49242EA45C30EC908F13A09111056C4D /* Pods-TxAdSupportKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TxAdSupportKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4CAA561F3DFAEDA080007E46DF4437C4 /* TxAdSupportKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TxAdSupportKit.m; path = TxAdSupportKit/Classes/TxAdSupportKit.m; sourceTree = "<group>"; };
+		507035DEC66AA0C9C475B331B9F108DB /* TxInterstitialHalfAdProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxInterstitialHalfAdProvider.swift; path = TxAdSupportKit/Classes/TxInterstitialHalfAdProvider.swift; sourceTree = "<group>"; };
+		51E433E116749F5F039A1067096439CF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = TxAdSupportKit/Assets/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		52D9CB1DDD0C29106EF3BACE8404011D /* TxAdSupportKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TxAdSupportKit.modulemap; sourceTree = "<group>"; };
+		540225C8FF373BFA55EA9B211A963741 /* TxAdSupportInitProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxAdSupportInitProvider.swift; path = TxAdSupportKit/Classes/TxAdSupportInitProvider.swift; sourceTree = "<group>"; };
+		578611F2CB968549A51278DCB3951155 /* Tquic.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Tquic.xcframework; path = GDTFramework/Tquic.xcframework; sourceTree = "<group>"; };
+		5C60D898A807D08C422B8D555E25AE7C /* TxAdSupportKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TxAdSupportKit-Info.plist"; sourceTree = "<group>"; };
+		60D204D6601A9A45CA3E07D2FD469C63 /* TxAdSupportKit-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "TxAdSupportKit-xcframeworks.sh"; sourceTree = "<group>"; };
+		647590AF968C9929A1CAF24C25C93AAE /* Pods-TxAdSupportKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TxAdSupportKit_Tests.modulemap"; sourceTree = "<group>"; };
+		67982E96834B5311F9344602A833E977 /* ResourceBundle-TxAdSupportKit-TxAdSupportKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TxAdSupportKit-TxAdSupportKit-Info.plist"; sourceTree = "<group>"; };
+		6921277C850D5D13BC563D506AB240FE /* TxAdSupportKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TxAdSupportKit; path = TxAdSupportKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A297C1AA58B933CB600F24CF08D53B4 /* Pods-TxAdSupportKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TxAdSupportKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		71B809811462E347A7229C6DC4A1B306 /* GDTMobSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = GDTMobSDK.xcframework; path = GDTFramework/GDTMobSDK.xcframework; sourceTree = "<group>"; };
+		73F7DEE00B0F9EF813F91ED900BD19B0 /* BUAdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = BUAdSDK.xcframework; path = TxAdSupportKit/ADSupportSDKs/BUAdSDK.xcframework; sourceTree = "<group>"; };
+		75D597292A0C0260BEA93DCA1776ABAD /* Pods-TxAdSupportKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TxAdSupportKit_Example-dummy.m"; sourceTree = "<group>"; };
+		7795F014DCDD79684395260B11269A51 /* TxAdSupportKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TxAdSupportKit.debug.xcconfig; sourceTree = "<group>"; };
+		78FA39B5410ED6CB3480EF19C32668B8 /* TxAdSupportKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TxAdSupportKit-prefix.pch"; sourceTree = "<group>"; };
+		79CAB4B146D7542EA6C31099832E447A /* TxFeedFlowAdProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxFeedFlowAdProvider.swift; path = TxAdSupportKit/Classes/TxFeedFlowAdProvider.swift; sourceTree = "<group>"; };
+		8CF79282D771F6DF4A93772CB3B06A9B /* Pods-TxAdSupportKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TxAdSupportKit_Example-resources.sh"; sourceTree = "<group>"; };
+		8E78F2B89D37EE801A31717CB12F84C5 /* Pods-TxAdSupportKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TxAdSupportKit_Example"; path = Pods_TxAdSupportKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D53F19D1AA2765FC3617673B24E0F0 /* TxAdSupportKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TxAdSupportKit.h; path = TxAdSupportKit/Classes/TxAdSupportKit.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0472D1313E251AB81B8193215F7FED6 /* KSAdSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = KSAdSDK.xcframework; sourceTree = "<group>"; };
+		A1C80B62445769CB50164BA9C0F22B44 /* GDTMobSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.debug.xcconfig; sourceTree = "<group>"; };
+		AF09E550EFF9784CE84F17ABAAC438C1 /* TxAdSupportKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TxAdSupportKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B0B30709E4913DBEB071747A8EC52391 /* TxAdSupportKit-TxAdSupportKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "TxAdSupportKit-TxAdSupportKit"; path = TxAdSupportKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B337E2B693C5E59BF25BF68C8A8E1D24 /* Pods-TxAdSupportKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TxAdSupportKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BA5A6761741C1684F4846A82EE1365AD /* Pods-TxAdSupportKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TxAdSupportKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		BE134153BDE03321566BA13CCB8CF40A /* Pods-TxAdSupportKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TxAdSupportKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		BF31D779E2BFAA3F1DFA8140A4BCFC07 /* TxRewardADProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxRewardADProvider.swift; path = TxAdSupportKit/Classes/TxRewardADProvider.swift; sourceTree = "<group>"; };
+		C3623938F25D75520BCBC45949B3E0DA /* CSJMediation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CSJMediation.xcframework; path = TxAdSupportKit/ADSupportSDKs/CSJMediation.xcframework; sourceTree = "<group>"; };
+		C9B01B584C01724ACC7A7CC2F65132EE /* CSJMGdtAdapter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = CSJMGdtAdapter.xcframework; path = TxAdSupportKit/ADSupportSDKs/CSJMGdtAdapter.xcframework; sourceTree = "<group>"; };
+		CB2BE6C60A48BD2B5DB5187A8D6233F4 /* TxAdSupportKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TxAdSupportKit.release.xcconfig; sourceTree = "<group>"; };
+		D26D76B84B4B63307EFF769F2DF7B693 /* TxAdSupportKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TxAdSupportKit-umbrella.h"; sourceTree = "<group>"; };
+		D6F98220B4C23583CD951D1655EC607B /* Pods-TxAdSupportKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TxAdSupportKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E92F72A7C233821FECB6DB3F00BEB291 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB46BC331FD6BCB3EA6EDE180CD6C252 /* GDTMobSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.release.xcconfig; sourceTree = "<group>"; };
+		F684832367972A8A06CD37A59E9C1683 /* Pods-TxAdSupportKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TxAdSupportKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		F7380C646E6F1C6FC72DA72B9F26216C /* TxBannerProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TxBannerProvider.swift; path = TxAdSupportKit/Classes/TxBannerProvider.swift; sourceTree = "<group>"; };
+		F97719296C32C589022B6CEAEE997707 /* Pods-TxAdSupportKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TxAdSupportKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FFCD267C9AA8C146C18069C14EB56099 /* Pods-TxAdSupportKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TxAdSupportKit_Tests"; path = Pods_TxAdSupportKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		327C1191C6D43F7C7979E91C869020EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F7C50E7720C18C996F9997536FC428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502CEAF57638FE66C5F421E00FE2D84C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5E3FE8AAAF852498D9F08E534D10E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AEAF1CD7A2EBEB539EE8E77EDC4C44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFF62C1D4E464433376786D5871DE60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74654D810BE771464BFD4E3663CDAFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046979BFDFDD69E7E3E323232102814C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73F7DEE00B0F9EF813F91ED900BD19B0 /* BUAdSDK.xcframework */,
+				C3623938F25D75520BCBC45949B3E0DA /* CSJMediation.xcframework */,
+				C9B01B584C01724ACC7A7CC2F65132EE /* CSJMGdtAdapter.xcframework */,
+				3F7CDD000492908755778F00D684D54B /* CSJMKsAdapter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E21529351C274ABA7C12D70138D6D3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71B809811462E347A7229C6DC4A1B306 /* GDTMobSDK.xcframework */,
+				578611F2CB968549A51278DCB3951155 /* Tquic.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2576DA3449FC3B7223225C6B8BF791BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0472D1313E251AB81B8193215F7FED6 /* KSAdSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EA046687FB5C5B21C1611729FEB7DB3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD2AB4E6BA836124FE5B74FE471D3C0C /* Pods-TxAdSupportKit_Example */,
+				A273E17FCD80D5D1664204E4383DFC6C /* Pods-TxAdSupportKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		84B366BB5E2F8032E6635753FC73CD39 /* TxAdSupportKit */ = {
+			isa = PBXGroup;
+			children = (
+				0E27D9FCEBF7E8E3F7DF457694DCD638 /* CSJAdSDK.bundle */,
+				51E433E116749F5F039A1067096439CF /* PrivacyInfo.xcprivacy */,
+				540225C8FF373BFA55EA9B211A963741 /* TxAdSupportInitProvider.swift */,
+				97D53F19D1AA2765FC3617673B24E0F0 /* TxAdSupportKit.h */,
+				4CAA561F3DFAEDA080007E46DF4437C4 /* TxAdSupportKit.m */,
+				F7380C646E6F1C6FC72DA72B9F26216C /* TxBannerProvider.swift */,
+				79CAB4B146D7542EA6C31099832E447A /* TxFeedFlowAdProvider.swift */,
+				0490175F4512ED61622AD5210C87CACD /* TxInterstitialFullAdProvider.swift */,
+				507035DEC66AA0C9C475B331B9F108DB /* TxInterstitialHalfAdProvider.swift */,
+				BF31D779E2BFAA3F1DFA8140A4BCFC07 /* TxRewardADProvider.swift */,
+				046979BFDFDD69E7E3E323232102814C /* Frameworks */,
+				A3C8E7A19B9E81F26D0A1CC984A6A9D0 /* Pod */,
+				D921659E54BBE4728C5139FFB97C1860 /* Support Files */,
+			);
+			name = TxAdSupportKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		931CA9CC10D6EF36B07D688CEAED2202 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F86A156AD1B1574B4570597F52D74B7 /* GDTMobSDK-xcframeworks.sh */,
+				A1C80B62445769CB50164BA9C0F22B44 /* GDTMobSDK.debug.xcconfig */,
+				EB46BC331FD6BCB3EA6EDE180CD6C252 /* GDTMobSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GDTMobSDK";
+			sourceTree = "<group>";
+		};
+		9A42577C61ED098FA5B5CF0F411BDD0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F498D336177DB3E3408752C19275FB93 /* GDTMobSDK */,
+				B44528882505AC37BB968454F7C9F23B /* KSAdSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A273E17FCD80D5D1664204E4383DFC6C /* Pods-TxAdSupportKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				647590AF968C9929A1CAF24C25C93AAE /* Pods-TxAdSupportKit_Tests.modulemap */,
+				3ACC55B24CC3CC7531A563F92528D0B1 /* Pods-TxAdSupportKit_Tests-acknowledgements.markdown */,
+				6A297C1AA58B933CB600F24CF08D53B4 /* Pods-TxAdSupportKit_Tests-acknowledgements.plist */,
+				BE134153BDE03321566BA13CCB8CF40A /* Pods-TxAdSupportKit_Tests-dummy.m */,
+				F684832367972A8A06CD37A59E9C1683 /* Pods-TxAdSupportKit_Tests-Info.plist */,
+				4740196F5F401659BC3B6A00F3CAC94D /* Pods-TxAdSupportKit_Tests-umbrella.h */,
+				F97719296C32C589022B6CEAEE997707 /* Pods-TxAdSupportKit_Tests.debug.xcconfig */,
+				D6F98220B4C23583CD951D1655EC607B /* Pods-TxAdSupportKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-TxAdSupportKit_Tests";
+			path = "Target Support Files/Pods-TxAdSupportKit_Tests";
+			sourceTree = "<group>";
+		};
+		A3C8E7A19B9E81F26D0A1CC984A6A9D0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				362B0A7E917BEBBDCC6599CE23E43D4C /* LICENSE */,
+				E92F72A7C233821FECB6DB3F00BEB291 /* README.md */,
+				AF09E550EFF9784CE84F17ABAAC438C1 /* TxAdSupportKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B103D3701538F91BBD7F62CB822CD5FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E78F2B89D37EE801A31717CB12F84C5 /* Pods-TxAdSupportKit_Example */,
+				FFCD267C9AA8C146C18069C14EB56099 /* Pods-TxAdSupportKit_Tests */,
+				6921277C850D5D13BC563D506AB240FE /* TxAdSupportKit */,
+				B0B30709E4913DBEB071747A8EC52391 /* TxAdSupportKit-TxAdSupportKit */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44528882505AC37BB968454F7C9F23B /* KSAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2576DA3449FC3B7223225C6B8BF791BA /* Frameworks */,
+				D690E32726B570423DE1CB770284F4C9 /* Support Files */,
+			);
+			name = KSAdSDK;
+			path = KSAdSDK;
+			sourceTree = "<group>";
+		};
+		C698B2182068EF089FF6CE184E3D8619 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84B366BB5E2F8032E6635753FC73CD39 /* TxAdSupportKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C698B2182068EF089FF6CE184E3D8619 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9A42577C61ED098FA5B5CF0F411BDD0F /* Pods */,
+				B103D3701538F91BBD7F62CB822CD5FE /* Products */,
+				5EA046687FB5C5B21C1611729FEB7DB3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D690E32726B570423DE1CB770284F4C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				45F5CD5F201A9A97F4768194105511B9 /* KSAdSDK-xcframeworks.sh */,
+				24B406EFA279318AA8F05580DDD1C1D8 /* KSAdSDK.debug.xcconfig */,
+				470307E4E9AA1FDC7D60552229F5C8B4 /* KSAdSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KSAdSDK";
+			sourceTree = "<group>";
+		};
+		D921659E54BBE4728C5139FFB97C1860 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67982E96834B5311F9344602A833E977 /* ResourceBundle-TxAdSupportKit-TxAdSupportKit-Info.plist */,
+				52D9CB1DDD0C29106EF3BACE8404011D /* TxAdSupportKit.modulemap */,
+				1EA7BF8C963D58D8987B1B0724D07727 /* TxAdSupportKit-dummy.m */,
+				5C60D898A807D08C422B8D555E25AE7C /* TxAdSupportKit-Info.plist */,
+				78FA39B5410ED6CB3480EF19C32668B8 /* TxAdSupportKit-prefix.pch */,
+				D26D76B84B4B63307EFF769F2DF7B693 /* TxAdSupportKit-umbrella.h */,
+				60D204D6601A9A45CA3E07D2FD469C63 /* TxAdSupportKit-xcframeworks.sh */,
+				7795F014DCDD79684395260B11269A51 /* TxAdSupportKit.debug.xcconfig */,
+				CB2BE6C60A48BD2B5DB5187A8D6233F4 /* TxAdSupportKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TxAdSupportKit";
+			sourceTree = "<group>";
+		};
+		DD2AB4E6BA836124FE5B74FE471D3C0C /* Pods-TxAdSupportKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2E69C190C86D6CE873F6C986B0054B94 /* Pods-TxAdSupportKit_Example.modulemap */,
+				2C586013E10713945BD9DE98FC14CCF0 /* Pods-TxAdSupportKit_Example-acknowledgements.markdown */,
+				3E20ED61F5FE1E0A8DE418AC27E9AC8E /* Pods-TxAdSupportKit_Example-acknowledgements.plist */,
+				75D597292A0C0260BEA93DCA1776ABAD /* Pods-TxAdSupportKit_Example-dummy.m */,
+				B337E2B693C5E59BF25BF68C8A8E1D24 /* Pods-TxAdSupportKit_Example-frameworks.sh */,
+				30ADA4C563C3F8D25224D5D2D054E4FC /* Pods-TxAdSupportKit_Example-Info.plist */,
+				8CF79282D771F6DF4A93772CB3B06A9B /* Pods-TxAdSupportKit_Example-resources.sh */,
+				BA5A6761741C1684F4846A82EE1365AD /* Pods-TxAdSupportKit_Example-umbrella.h */,
+				49242EA45C30EC908F13A09111056C4D /* Pods-TxAdSupportKit_Example.debug.xcconfig */,
+				12C33D06398583DF2276902BD99B0DEC /* Pods-TxAdSupportKit_Example.release.xcconfig */,
+			);
+			name = "Pods-TxAdSupportKit_Example";
+			path = "Target Support Files/Pods-TxAdSupportKit_Example";
+			sourceTree = "<group>";
+		};
+		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F498D336177DB3E3408752C19275FB93 /* GDTMobSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0E21529351C274ABA7C12D70138D6D3A /* Frameworks */,
+				931CA9CC10D6EF36B07D688CEAED2202 /* Support Files */,
+			);
+			name = GDTMobSDK;
+			path = GDTMobSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA964E0BF8355552088D83DB07A9ADBF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FBE07B1F50F2514519ECACCC298708F /* Pods-TxAdSupportKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A7563DDF1BE862EF767B922B3653A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25FD3C9AC826E0B82F6041DAE35FC79 /* Pods-TxAdSupportKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4999FD3959C1AFB045D24A9FE22023 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AB5CC7FD854DE2024A2C7F1D804495 /* TxAdSupportKit.h in Headers */,
+				C0AEFEC0D6652382A6853F4E592C2F0F /* TxAdSupportKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C480FDE17F5EF75F16DFA0A12E55394 /* Pods-TxAdSupportKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F6B61D9533B9557E7518A5F6CF8D6E /* Build configuration list for PBXNativeTarget "Pods-TxAdSupportKit_Tests" */;
+			buildPhases = (
+				CA964E0BF8355552088D83DB07A9ADBF /* Headers */,
+				F2CC6570DD27A10C85C9E9ABD6C1E550 /* Sources */,
+				FD5E3FE8AAAF852498D9F08E534D10E1 /* Frameworks */,
+				A2EC09F868678CC556193CDDDE2A0609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5811AEEC89E824FF8726F9B7BA83D240 /* PBXTargetDependency */,
+			);
+			name = "Pods-TxAdSupportKit_Tests";
+			productName = Pods_TxAdSupportKit_Tests;
+			productReference = FFCD267C9AA8C146C18069C14EB56099 /* Pods-TxAdSupportKit_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		2346F0EAB232ED672D998FFDB74E77C6 /* TxAdSupportKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C510C20FEB1F80CDAA45D2CD3C383ABC /* Build configuration list for PBXNativeTarget "TxAdSupportKit" */;
+			buildPhases = (
+				FA4999FD3959C1AFB045D24A9FE22023 /* Headers */,
+				2453AE1A521E7A126EEAC08DF8F49F5C /* [CP] Copy XCFrameworks */,
+				B900D0CB52F29E5F347428369CFED29E /* Sources */,
+				41F7C50E7720C18C996F9997536FC428 /* Frameworks */,
+				87C1EC2CE1DB981BEF0D0716A51C822C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C017A9E70610DF4A4F082CE1CF1C4393 /* PBXTargetDependency */,
+				589C8B0A53B85E8C57D91EB7F7F9C3EB /* PBXTargetDependency */,
+				C091C83783BE3093E18FC5B5DAEB2291 /* PBXTargetDependency */,
+			);
+			name = TxAdSupportKit;
+			productName = TxAdSupportKit;
+			productReference = 6921277C850D5D13BC563D506AB240FE /* TxAdSupportKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		53A71A5C12A448F71659E5328E99AB86 /* Pods-TxAdSupportKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED0611A9078B0925055AD595A35506CD /* Build configuration list for PBXNativeTarget "Pods-TxAdSupportKit_Example" */;
+			buildPhases = (
+				E2A7563DDF1BE862EF767B922B3653A0 /* Headers */,
+				0EEE71F0C6638B91B1A5E1CC5A637863 /* Sources */,
+				FFF62C1D4E464433376786D5871DE60C /* Frameworks */,
+				0AFF81DAF62989935AA2C3697DA1F003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				050AA0595C154852A487ADD95C4C9A17 /* PBXTargetDependency */,
+				5C21712EDE6AE9C74436D19577CEEB85 /* PBXTargetDependency */,
+				A4E5D879C221AAFF6C74AE27C38679D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-TxAdSupportKit_Example";
+			productName = Pods_TxAdSupportKit_Example;
+			productReference = 8E78F2B89D37EE801A31717CB12F84C5 /* Pods-TxAdSupportKit_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAC5F2FEBD7585691654C539EBBFEAC8 /* TxAdSupportKit-TxAdSupportKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C47E4C2A3A9F7BA37674423247A58F6D /* Build configuration list for PBXNativeTarget "TxAdSupportKit-TxAdSupportKit" */;
+			buildPhases = (
+				17B47415638767B703A703657FF8651B /* Sources */,
+				327C1191C6D43F7C7979E91C869020EF /* Frameworks */,
+				2D707DB00F19D46CF0E33E8D1CFA9EEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TxAdSupportKit-TxAdSupportKit";
+			productName = TxAdSupportKit;
+			productReference = B0B30709E4913DBEB071747A8EC52391 /* TxAdSupportKit-TxAdSupportKit */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B103D3701538F91BBD7F62CB822CD5FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */,
+				53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */,
+				53A71A5C12A448F71659E5328E99AB86 /* Pods-TxAdSupportKit_Example */,
+				1C480FDE17F5EF75F16DFA0A12E55394 /* Pods-TxAdSupportKit_Tests */,
+				2346F0EAB232ED672D998FFDB74E77C6 /* TxAdSupportKit */,
+				EAC5F2FEBD7585691654C539EBBFEAC8 /* TxAdSupportKit-TxAdSupportKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AFF81DAF62989935AA2C3697DA1F003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D707DB00F19D46CF0E33E8D1CFA9EEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC929315FF50CDBE602C4AEFE0C23A3E /* CSJAdSDK.bundle in Resources */,
+				4E604FC7D0DB2202834B74D5597D0DAB /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C1EC2CE1DB981BEF0D0716A51C822C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EC09F868678CC556193CDDDE2A0609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2453AE1A521E7A126EEAC08DF8F49F5C /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/TxAdSupportKit/TxAdSupportKit-xcframeworks.sh",
+				"${PODS_ROOT}/../../TxAdSupportKit/ADSupportSDKs/BUAdSDK.xcframework",
+				"${PODS_ROOT}/../../TxAdSupportKit/ADSupportSDKs/CSJMediation.xcframework",
+				"${PODS_ROOT}/../../TxAdSupportKit/ADSupportSDKs/CSJMGdtAdapter.xcframework",
+				"${PODS_ROOT}/../../TxAdSupportKit/ADSupportSDKs/CSJMKsAdapter.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TxAdSupportKit/BUAdSDK.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TxAdSupportKit/CSJMediation.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TxAdSupportKit/CSJMGdtAdapter.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TxAdSupportKit/CSJMKsAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/TxAdSupportKit/TxAdSupportKit-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A8259F6757B3ADD322D7FAEB90C60B6 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/KSAdSDK/KSAdSDK-xcframeworks.sh",
+				"${PODS_ROOT}/KSAdSDK/KSAdSDK.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/KSAdSDK/KSAdSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A898C4D2EDC42356AF1A6C968411C06D /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/GDTMobSDK/GDTMobSDK-xcframeworks.sh",
+				"${PODS_ROOT}/GDTMobSDK/GDTFramework/GDTMobSDK.xcframework",
+				"${PODS_ROOT}/GDTMobSDK/GDTFramework/Tquic.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GDTMobSDK/GDTMobSDK.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/GDTMobSDK/Tquic.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/GDTMobSDK/GDTMobSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EEE71F0C6638B91B1A5E1CC5A637863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EC6FAF75C070AC4872B30EC1C8B46AF /* Pods-TxAdSupportKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17B47415638767B703A703657FF8651B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B900D0CB52F29E5F347428369CFED29E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F7382B65EE25460743BBA448E9EF9F /* TxAdSupportInitProvider.swift in Sources */,
+				F33DC3FBEE086A6C55F271BA03728069 /* TxAdSupportKit.m in Sources */,
+				658D19CFE573A5F1120E0DB5F12EBEA8 /* TxAdSupportKit-dummy.m in Sources */,
+				2F100C830E8ED957C50C957C7A50364A /* TxBannerProvider.swift in Sources */,
+				42BEF9F5F1A556CFF095144A9BF61B6D /* TxFeedFlowAdProvider.swift in Sources */,
+				A4D87F8F4F3D5FBDD39ED6A932E2D9E8 /* TxInterstitialFullAdProvider.swift in Sources */,
+				A1676974D963E694A15D946380BA83B6 /* TxInterstitialHalfAdProvider.swift in Sources */,
+				6AD24D940112F8F3E81E4CD29D9EC121 /* TxRewardADProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CC6570DD27A10C85C9E9ABD6C1E550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				233ECF0432257A1C6A3896CF2D058866 /* Pods-TxAdSupportKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		050AA0595C154852A487ADD95C4C9A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDTMobSDK;
+			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
+			targetProxy = FEEA14712A20C936880AD383E575FD4C /* PBXContainerItemProxy */;
+		};
+		5811AEEC89E824FF8726F9B7BA83D240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TxAdSupportKit_Example";
+			target = 53A71A5C12A448F71659E5328E99AB86 /* Pods-TxAdSupportKit_Example */;
+			targetProxy = 4DD4BBCDAE7238A24C8484E6CF12D659 /* PBXContainerItemProxy */;
+		};
+		589C8B0A53B85E8C57D91EB7F7F9C3EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSAdSDK;
+			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
+			targetProxy = BD615C3D961E1A6B918E0405EFAFE0E0 /* PBXContainerItemProxy */;
+		};
+		5C21712EDE6AE9C74436D19577CEEB85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KSAdSDK;
+			target = 53DB8EFBB54B636ACDC70272323792EC /* KSAdSDK */;
+			targetProxy = DF0661F6552862AF69079A5E2447A418 /* PBXContainerItemProxy */;
+		};
+		A4E5D879C221AAFF6C74AE27C38679D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TxAdSupportKit;
+			target = 2346F0EAB232ED672D998FFDB74E77C6 /* TxAdSupportKit */;
+			targetProxy = A20FC4361A8AED72399DAF4323380F25 /* PBXContainerItemProxy */;
+		};
+		C017A9E70610DF4A4F082CE1CF1C4393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDTMobSDK;
+			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
+			targetProxy = D5C067A979D1446F74042EF940666705 /* PBXContainerItemProxy */;
+		};
+		C091C83783BE3093E18FC5B5DAEB2291 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TxAdSupportKit-TxAdSupportKit";
+			target = EAC5F2FEBD7585691654C539EBBFEAC8 /* TxAdSupportKit-TxAdSupportKit */;
+			targetProxy = CE3A5983514DCD1049AF90CF41ED98D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		087F2754003F4F36E593D6E97EA7208D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2BE6C60A48BD2B5DB5187A8D6233F4 /* TxAdSupportKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TxAdSupportKit/TxAdSupportKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/TxAdSupportKit/TxAdSupportKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TxAdSupportKit/TxAdSupportKit.modulemap";
+				PRODUCT_MODULE_NAME = TxAdSupportKit;
+				PRODUCT_NAME = TxAdSupportKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		448BEE3754959A7A18ADE9095787F03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97719296C32C589022B6CEAEE997707 /* Pods-TxAdSupportKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TxAdSupportKit_Tests/Pods-TxAdSupportKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TxAdSupportKit_Tests/Pods-TxAdSupportKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48439DB7C016A829457445D0D6501BD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49242EA45C30EC908F13A09111056C4D /* Pods-TxAdSupportKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TxAdSupportKit_Example/Pods-TxAdSupportKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TxAdSupportKit_Example/Pods-TxAdSupportKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54CEB06B265466F1A3D432F0171D829F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470307E4E9AA1FDC7D60552229F5C8B4 /* KSAdSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59033467BC9C2B58A9BDAD03576F5E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7795F014DCDD79684395260B11269A51 /* TxAdSupportKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/TxAdSupportKit/TxAdSupportKit-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/TxAdSupportKit/TxAdSupportKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/TxAdSupportKit/TxAdSupportKit.modulemap";
+				PRODUCT_MODULE_NAME = TxAdSupportKit;
+				PRODUCT_NAME = TxAdSupportKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		647699CB550C338D0F2048BB4EE6AA37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7795F014DCDD79684395260B11269A51 /* TxAdSupportKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TxAdSupportKit";
+				IBSC_MODULE = TxAdSupportKit;
+				INFOPLIST_FILE = "Target Support Files/TxAdSupportKit/ResourceBundle-TxAdSupportKit-TxAdSupportKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = TxAdSupportKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6933ADD8ACDDE6F353ABA79BB15CC707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6F98220B4C23583CD951D1655EC607B /* Pods-TxAdSupportKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TxAdSupportKit_Tests/Pods-TxAdSupportKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TxAdSupportKit_Tests/Pods-TxAdSupportKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A25582E1A369D739C56661C993CF9D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B406EFA279318AA8F05580DDD1C1D8 /* KSAdSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BBAA6566E0C31EF19252E0B3EEB5A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C33D06398583DF2276902BD99B0DEC /* Pods-TxAdSupportKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-TxAdSupportKit_Example/Pods-TxAdSupportKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TxAdSupportKit_Example/Pods-TxAdSupportKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A7FBE14D8727525CED450F8EBA976B9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB2BE6C60A48BD2B5DB5187A8D6233F4 /* TxAdSupportKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TxAdSupportKit";
+				IBSC_MODULE = TxAdSupportKit;
+				INFOPLIST_FILE = "Target Support Files/TxAdSupportKit/ResourceBundle-TxAdSupportKit-TxAdSupportKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_NAME = TxAdSupportKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B3EC4D3C50336EDD77BF6FF21E2CFB4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C80B62445769CB50164BA9C0F22B44 /* GDTMobSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E6740DED94F420DE650BF08F7C577CB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB46BC331FD6BCB3EA6EDE180CD6C252 /* GDTMobSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C520112CBE951086C70C7E7454E1E8D /* Build configuration list for PBXAggregateTarget "KSAdSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A25582E1A369D739C56661C993CF9D0 /* Debug */,
+				54CEB06B265466F1A3D432F0171D829F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78741371A3F2A9B3F3B5D2079C6FC6E4 /* Build configuration list for PBXAggregateTarget "GDTMobSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3EC4D3C50336EDD77BF6FF21E2CFB4C /* Debug */,
+				E6740DED94F420DE650BF08F7C577CB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F6B61D9533B9557E7518A5F6CF8D6E /* Build configuration list for PBXNativeTarget "Pods-TxAdSupportKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				448BEE3754959A7A18ADE9095787F03F /* Debug */,
+				6933ADD8ACDDE6F353ABA79BB15CC707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C47E4C2A3A9F7BA37674423247A58F6D /* Build configuration list for PBXNativeTarget "TxAdSupportKit-TxAdSupportKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647699CB550C338D0F2048BB4EE6AA37 /* Debug */,
+				A7FBE14D8727525CED450F8EBA976B9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C510C20FEB1F80CDAA45D2CD3C383ABC /* Build configuration list for PBXNativeTarget "TxAdSupportKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59033467BC9C2B58A9BDAD03576F5E63 /* Debug */,
+				087F2754003F4F36E593D6E97EA7208D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED0611A9078B0925055AD595A35506CD /* Build configuration list for PBXNativeTarget "Pods-TxAdSupportKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48439DB7C016A829457445D0D6501BD5 /* Debug */,
+				7BBAA6566E0C31EF19252E0B3EEB5A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

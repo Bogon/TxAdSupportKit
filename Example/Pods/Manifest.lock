@@ -1,0 +1,27 @@
+PODS:
+  - GDTMobSDK (4.15.41)
+  - KSAdSDK (4.6.30.1)
+  - TxAdSupportKit (4.15.6):
+    - GDTMobSDK (= 4.15.41)
+    - KSAdSDK (= 4.6.30.1)
+
+DEPENDENCIES:
+  - TxAdSupportKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GDTMobSDK
+    - KSAdSDK
+
+EXTERNAL SOURCES:
+  TxAdSupportKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GDTMobSDK: d549f5d0c06c2534dbce08cfb21e2266975b7f5a
+  KSAdSDK: 15d8613714c8f1728b0bd6d461a3d7e316e61982
+  TxAdSupportKit: f0fba97615d9faa9e052c9d6b2679071f7a5ca4c
+
+PODFILE CHECKSUM: 4af127de9f55d410b31bf1467f6b66c2ab15ff13
+
+COCOAPODS: 1.16.2

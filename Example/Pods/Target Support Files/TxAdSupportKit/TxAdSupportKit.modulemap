@@ -1,0 +1,6 @@
+framework module TxAdSupportKit {
+  umbrella header "TxAdSupportKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

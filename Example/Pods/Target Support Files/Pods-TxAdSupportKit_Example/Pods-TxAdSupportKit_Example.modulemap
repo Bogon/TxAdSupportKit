@@ -1,0 +1,6 @@
+framework module Pods_TxAdSupportKit_Example {
+  umbrella header "Pods-TxAdSupportKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
