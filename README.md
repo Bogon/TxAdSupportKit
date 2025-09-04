@@ -33,8 +33,8 @@ pod lib create TxAdSupportKit
 pod lib lint TxAdSupportKit.podspec --allow-warnings
 
 git add .
-git commit -m "release 4.15.6"
-git tag 4.15.6
+git commit -m "release 4.15.7"
+git tag 4.15.8
 
 git push origin main --tags
 
