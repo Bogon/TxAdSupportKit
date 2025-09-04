@@ -19,35 +19,35 @@ public class TxBannerProvider: NSObject, BUMNativeExpressBannerViewDelegate {
     }
     
     // MARK: - BUMNativeExpressBannerViewDelegate
-    func nativeExpressBannerAdViewDidLoad(_ bannerAdView: BUNativeExpressBannerView) {
+    public func nativeExpressBannerAdViewDidLoad(_ bannerAdView: BUNativeExpressBannerView) {
         bannerCompleted?(.success, bannerAdView)
     }
     
-    func nativeExpressBannerAdView(_ bannerAdView: BUNativeExpressBannerView, didLoadFailWithError error: (any Error)?) {
+    public func nativeExpressBannerAdView(_ bannerAdView: BUNativeExpressBannerView, didLoadFailWithError error: (any Error)?) {
         bannerCompleted?(.loadFail, nil)
     }
     
-    func nativeExpressBannerAdViewDidBecomeVisible(_ bannerAdView: BUNativeExpressBannerView) {
+    public func nativeExpressBannerAdViewDidBecomeVisible(_ bannerAdView: BUNativeExpressBannerView) {
         
     }
     
-    func nativeExpressBannerAdViewDidClick(_ bannerAdView: BUNativeExpressBannerView) {
+    public func nativeExpressBannerAdViewDidClick(_ bannerAdView: BUNativeExpressBannerView) {
         
     }
     
-    func nativeExpressBannerAdView(_ bannerAdView: BUNativeExpressBannerView, dislikeWithReason filterwords: [BUDislikeWords]?) {
+    public func nativeExpressBannerAdView(_ bannerAdView: BUNativeExpressBannerView, dislikeWithReason filterwords: [BUDislikeWords]?) {
         bannerCompleted?(.didClose, nil)
     }
     
-    func nativeExpressBannerAdViewDidCloseOtherController(_ bannerAdView: BUNativeExpressBannerView, interactionType: BUInteractionType) {
+    public func nativeExpressBannerAdViewDidCloseOtherController(_ bannerAdView: BUNativeExpressBannerView, interactionType: BUInteractionType) {
         bannerCompleted?(.didClose, nil)
     }
     
-    func nativeExpressBannerAdViewDidRemoved(_ bannerAdView: BUNativeExpressBannerView) {
+    public func nativeExpressBannerAdViewDidRemoved(_ bannerAdView: BUNativeExpressBannerView) {
         bannerCompleted?(.didClose, nil)
     }
     
-    func nativeExpressBannerAdNeedLayoutUI(_ bannerAd: BUNativeExpressBannerView, canvasView: BUMCanvasView) {
+    public func nativeExpressBannerAdNeedLayoutUI(_ bannerAd: BUNativeExpressBannerView, canvasView: BUMCanvasView) {
         
     }
     

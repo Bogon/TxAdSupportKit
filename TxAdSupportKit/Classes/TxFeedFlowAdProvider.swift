@@ -30,7 +30,7 @@ class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEve
         }
     }
     
-    func nativeExpressAdSuccess(toLoad nativeExpressAdManager: BUNativeExpressAdManager, views: [BUNativeExpressAdView]) {
+    public func nativeExpressAdSuccess(toLoad nativeExpressAdManager: BUNativeExpressAdManager, views: [BUNativeExpressAdView]) {
         if !views.isEmpty {
             views.forEach { expressView in
                 if let current: UIViewController = UIViewController.ptCurrentVC()  {
@@ -41,43 +41,43 @@ class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEve
         }
     }
     
-    func nativeExpressAdFail(toLoad nativeExpressAdManager: BUNativeExpressAdManager, error: (any Error)?) {
+    public func nativeExpressAdFail(toLoad nativeExpressAdManager: BUNativeExpressAdManager, error: (any Error)?) {
         feedFlowCompleted?(.loadFail, nil)
     }
     
-    func nativeExpressAdViewRenderSuccess(_ nativeExpressAdView: BUNativeExpressAdView) {
+    public func nativeExpressAdViewRenderSuccess(_ nativeExpressAdView: BUNativeExpressAdView) {
         feedFlowCompleted?(.success, nativeExpressAdView)
     }
     
-    func nativeExpressAdView(_ nativeExpressAdView: BUNativeExpressAdView, stateDidChanged playerState: BUPlayerPlayState) {
+    public func nativeExpressAdView(_ nativeExpressAdView: BUNativeExpressAdView, stateDidChanged playerState: BUPlayerPlayState) {
         
     }
     
-    func nativeExpressAdViewRenderFail(_ nativeExpressAdView: BUNativeExpressAdView, error: (any Error)?) {
+    public func nativeExpressAdViewRenderFail(_ nativeExpressAdView: BUNativeExpressAdView, error: (any Error)?) {
         feedFlowCompleted?(.loadFail, nil)
     }
     
-    func nativeExpressAdViewWillShow(_ nativeExpressAdView: BUNativeExpressAdView) {
+    public func nativeExpressAdViewWillShow(_ nativeExpressAdView: BUNativeExpressAdView) {
         
     }
     
-    func nativeExpressAdViewDidClick(_ nativeExpressAdView: BUNativeExpressAdView) {
+    public func nativeExpressAdViewDidClick(_ nativeExpressAdView: BUNativeExpressAdView) {
         
     }
     
-    func nativeExpressAdViewPlayerDidPlayFinish(_ nativeExpressAdView: BUNativeExpressAdView, error: (any Error)?) {
+    public func nativeExpressAdViewPlayerDidPlayFinish(_ nativeExpressAdView: BUNativeExpressAdView, error: (any Error)?) {
         
     }
     
-    func nativeExpressAdView(_ nativeExpressAdView: BUNativeExpressAdView, dislikeWithReason filterWords: [BUDislikeWords]) {
+    public func nativeExpressAdView(_ nativeExpressAdView: BUNativeExpressAdView, dislikeWithReason filterWords: [BUDislikeWords]) {
         feedFlowCompleted?(.didClose, nil)
     }
     
-    func nativeExpressAdViewDidRemoved(_ nativeExpressAdView: BUNativeExpressAdView) {
+    public func nativeExpressAdViewDidRemoved(_ nativeExpressAdView: BUNativeExpressAdView) {
         feedFlowCompleted?(.didClose, nil)
     }
     
-    func nativeExpressAdViewDidCloseOtherController(_ nativeExpressAdView: BUNativeExpressAdView, interactionType: BUInteractionType) {
+    public func nativeExpressAdViewDidCloseOtherController(_ nativeExpressAdView: BUNativeExpressAdView, interactionType: BUInteractionType) {
         
     }
     

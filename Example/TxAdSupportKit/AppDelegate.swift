@@ -13,19 +13,18 @@ import TxAdSupportKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let adProvider: TxInterstitialFullAdProvider = TxInterstitialFullAdProvider()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        adProvider.interstitialFullCompleted = { type in
+            print("type: \(type)")
+        }
         
-        TxAdSupportInitProvider.sdk(bundleId: "com.Wmfmenko.CLD", appid: "5728306") { success in
+        TxAdSupportInitProvider.sdk(bundleId: "com.Wmfmenko.CLD.Test", appid: "572845306") { success in
             if success {
-                let adProvider: TxInterstitialFullAdProvider = TxInterstitialFullAdProvider()
-                adProvider.showInterstitialFull(adId: "103578511")
-                adProvider.interstitialFullCompleted = { type in
-                    print("type: \(type)")
-                }
+                self.adProvider.showInterstitialFull(adId: "103588785511")
             }
         }
         
