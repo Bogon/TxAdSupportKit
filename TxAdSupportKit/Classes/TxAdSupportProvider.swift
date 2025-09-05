@@ -13,7 +13,8 @@ public final class TxAdSupportProvider: NSObject {
     let halfAdProvider: TxInterstitialHalfAdProvider = TxInterstitialHalfAdProvider()
     let bannerProvider: TxBannerProvider = TxBannerProvider()
     let feedFlowAdProvider: TxFeedFlowAdProvider = TxFeedFlowAdProvider()
-  
+    let rewardADProvider: TxRewardADProvider = TxRewardADProvider()
+    
     // 单例
     public static let shared = TxAdSupportProvider()
     
@@ -85,6 +86,50 @@ public final class TxAdSupportProvider: NSObject {
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdBannerRequest"), object: nil, queue: .main) { notification in
             if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String {
                 self.bannerProvider.showBanner(adId: adId)
+            }
+        }
+        
+        feedFlowAdProvider.feedFlowCompleted = { position, type, adView in
+            if type == .success,let view: UIView = adView {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdFeedFlowResponse"), object: nil, userInfo: [
+                    "type": type.rawValue,
+                    "view": view,
+                    "position": position.rawValue
+                ])
+            } else {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdFeedFlowResponse"), object: nil, userInfo: [
+                    "type": type.rawValue,
+                    "view": "",
+                    "position": position.rawValue
+                ])
+            }
+        }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdFeedFlowRequest"), object: nil, queue: .main) { notification in
+            if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String, let position = userInfo["position"] as? Int {
+                self.feedFlowAdProvider.showFeedFlow(adId: adId, position: TxAdFeedFlowPositionType(rawValue: position) ?? .vod)
+            }
+        }
+        
+        rewardADProvider.rewardCompleted = { type, transId, placementId in
+            if type == .success {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdRewardResponse"), object: nil, userInfo: [
+                    "type": type.rawValue,
+                    "transId": transId,
+                    "placementId": placementId
+                ])
+            } else {
+                NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdRewardResponse"), object: nil, userInfo: [
+                    "type": type.rawValue,
+                    "transId": "",
+                    "placementId": ""
+                ])
+            }
+        }
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdRewardRequest"), object: nil, queue: .main) { notification in
+            if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String {
+                self.rewardADProvider.showReward(adId: adId)
             }
         }
     }
