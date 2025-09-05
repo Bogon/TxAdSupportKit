@@ -8,14 +8,22 @@
 import UIKit
 import BUAdSDK
 
+public enum TxAdFeedFlowPositionType: Int {
+    case vod = 0
+    case search
+    case mine
+}
+
 public
 class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEventProtocol {
 
+    var positionType: TxAdFeedFlowPositionType = .vod
     var feedFlowAd: BUNativeExpressAdManager?
-    public var feedFlowCompleted:((_ type: TxAdSupportResposeType, _ view: UIView?)->Void)?
+    public var feedFlowCompleted:((_ position: TxAdFeedFlowPositionType, _ type: TxAdSupportResposeType, _ view: UIView?)->Void)?
     
-    public func showFeedFlow(adId: String) {
+    public func showFeedFlow(adId: String, position: TxAdFeedFlowPositionType = .vod) {
         if !adId.isEmpty {
+            positionType = position
             let slot: BUAdSlot = BUAdSlot.init()
             slot.id = adId
             slot.adType = .feed
@@ -42,11 +50,11 @@ class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEve
     }
     
     public func nativeExpressAdFail(toLoad nativeExpressAdManager: BUNativeExpressAdManager, error: (any Error)?) {
-        feedFlowCompleted?(.loadFail, nil)
+        feedFlowCompleted?(positionType, .loadFail, nil)
     }
     
     public func nativeExpressAdViewRenderSuccess(_ nativeExpressAdView: BUNativeExpressAdView) {
-        feedFlowCompleted?(.success, nativeExpressAdView)
+        feedFlowCompleted?(positionType, .success, nativeExpressAdView)
     }
     
     public func nativeExpressAdView(_ nativeExpressAdView: BUNativeExpressAdView, stateDidChanged playerState: BUPlayerPlayState) {
@@ -54,7 +62,7 @@ class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEve
     }
     
     public func nativeExpressAdViewRenderFail(_ nativeExpressAdView: BUNativeExpressAdView, error: (any Error)?) {
-        feedFlowCompleted?(.loadFail, nil)
+        feedFlowCompleted?(positionType, .loadFail, nil)
     }
     
     public func nativeExpressAdViewWillShow(_ nativeExpressAdView: BUNativeExpressAdView) {
@@ -70,11 +78,11 @@ class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEve
     }
     
     public func nativeExpressAdView(_ nativeExpressAdView: BUNativeExpressAdView, dislikeWithReason filterWords: [BUDislikeWords]) {
-        feedFlowCompleted?(.didClose, nil)
+        feedFlowCompleted?(positionType, .didClose, nil)
     }
     
     public func nativeExpressAdViewDidRemoved(_ nativeExpressAdView: BUNativeExpressAdView) {
-        feedFlowCompleted?(.didClose, nil)
+        feedFlowCompleted?(positionType, .didClose, nil)
     }
     
     public func nativeExpressAdViewDidCloseOtherController(_ nativeExpressAdView: BUNativeExpressAdView, interactionType: BUInteractionType) {
