@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
         
+
         TxAdSupportInitProvider.sdk(appid: "") { success in
             if success {
                 self.adProvider.showInterstitialFull(adId: "")
@@ -60,4 +61,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

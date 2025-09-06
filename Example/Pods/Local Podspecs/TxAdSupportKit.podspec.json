@@ -1,6 +1,6 @@
 {
   "name": "TxAdSupportKit",
-  "version": "4.15.10",
+  "version": "4.15.15",
   "summary": "TxAdSupportKit 是一个 CSJGromre 的集成 SDK。",
   "description": "TxAdSupportKit 是一个 SDK 广告类库，方便集成穿山甲、优量汇、快手等。",
   "homepage": "https://github.com/Bogon/TxAdSupportKit",
@@ -13,30 +13,32 @@
   },
   "source": {
     "git": "https://github.com/Bogon/TxAdSupportKit.git",
-    "tag": "4.15.10"
+    "tag": "4.15.15"
   },
-  "weak_frameworks": [
-    "AppTrackingTransparency",
-    "CoreML",
-    "DeviceCheck",
-    "CoreHaptics"
-  ],
   "static_framework": true,
   "platforms": {
-    "ios": "14.0"
+    "ios": "12.0"
   },
   "swift_versions": "4.2",
   "source_files": "TxAdSupportKit/Classes/**/*",
-  "vendored_frameworks": [
-    "TxAdSupportKit/ADSupportSDKs/*.xcframework"
-  ],
   "resource_bundles": {
     "TxAdSupportKit": [
-      "TxAdSupportKit/Assets/PrivacyInfo.xcprivacy",
-      "TxAdSupportKit/Assets/*.bundle"
+      "TxAdSupportKit/Assets/PrivacyInfo.xcprivacy"
     ]
   },
   "dependencies": {
+    "Ads-CN-Beta": [
+      "7.1.0.3"
+    ],
+    "Ads-CN-Beta/CSJMediation": [
+      "7.1.0.3"
+    ],
+    "GMGdtAdapter-Beta": [
+      "4.15.41.1"
+    ],
+    "GMKsAdapter-Beta": [
+      "4.6.30.1.1"
+    ],
     "GDTMobSDK": [
       "4.15.41"
     ],

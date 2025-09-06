@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TxAdSupportKit'
-  s.version          = '4.15.13'
+  s.version          = '4.15.15'
   s.summary          = 'TxAdSupportKit 是一个 CSJGromre 的集成 SDK。'
 
 # This description is used to generate tags and improve search results.
@@ -27,17 +27,25 @@ Pod::Spec.new do |s|
   s.author           = { 'bogonchar' => 'zhangqixcu@gmail.com' }
   s.source           = { :git => 'https://github.com/Bogon/TxAdSupportKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.weak_frameworks = 'AppTrackingTransparency', 'CoreML', 'DeviceCheck', 'CoreHaptics'
   s.static_framework = true
-  s.ios.deployment_target = '14.0'
+  s.ios.deployment_target = '12.0'
   s.swift_version = '4.2'
 
   s.source_files = 'TxAdSupportKit/Classes/**/*'
-  s.vendored_frameworks = ['TxAdSupportKit/ADSupportSDKs/*.xcframework']
   s.resource_bundles = {
-    'TxAdSupportKit' => ['TxAdSupportKit/Assets/PrivacyInfo.xcprivacy', 'TxAdSupportKit/Assets/*.bundle']
+    'TxAdSupportKit' => ['TxAdSupportKit/Assets/PrivacyInfo.xcprivacy']
   }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
+  s.dependency 'Ads-CN-Beta', '7.1.0.3'
+  # 注意：如果需要指定子模块（subspec），写法如下
+  s.dependency 'Ads-CN-Beta/CSJMediation', '7.1.0.3'
+
+  # 引入融合适配器
+  s.dependency 'GMGdtAdapter-Beta', '4.15.41.1'
+  s.dependency 'GMKsAdapter-Beta', '4.6.30.1.1'
+
+  # 引入 ADN SDK
   s.dependency 'GDTMobSDK', '4.15.41'
   s.dependency 'KSAdSDK', '4.6.30.1'
   

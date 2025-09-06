@@ -1,8 +1,63 @@
 PODS:
+  - Ads-CN-Beta (7.1.0.3):
+    - Ads-CN-Beta/BUAdLive-Framework (= 7.1.0.3)
+    - Ads-CN-Beta/BUAdSDK (= 7.1.0.3)
+  - Ads-CN-Beta/BUAdLive (7.1.0.3)
+  - Ads-CN-Beta/BUAdLive-Framework (7.1.0.3):
+    - Ads-CN-Beta/BUAdLive
+    - BUTTSDKFramework/LivePull-Lite (= 1.46.2.7-premium)
+  - Ads-CN-Beta/BUAdSDK (7.1.0.3)
+  - Ads-CN-Beta/CSJMediation (7.1.0.3):
+    - Ads-CN-Beta/BUAdLive-Framework
+    - Ads-CN-Beta/CSJMediation-Only
+  - Ads-CN-Beta/CSJMediation-Only (7.1.0.3):
+    - Ads-CN-Beta/BUAdSDK
+  - BUTTSDKFramework/Core (1.46.2.7-premium)
+  - BUTTSDKFramework/LiveBase (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/LivePlayer/Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Base
+    - BUTTSDKFramework/PlayerCore/LiveLite
+  - BUTTSDKFramework/LivePull-Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Lite
+  - BUTTSDKFramework/PlayerCore/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Core
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/PlayerCore/LiveLite (1.46.2.7-premium):
+    - BUTTSDKFramework/PlayerCore/Base
+    - BUTTSDKFramework/TTFFmpeg/LiveLite
+  - BUTTSDKFramework/Reachability (1.46.2.7-premium)
+  - BUTTSDKFramework/SSL (1.46.2.7-premium)
+  - BUTTSDKFramework/Strategy/Core (1.46.2.7-premium):
+    - BUTTSDKFramework/LiveBase
+    - BUTTSDKFramework/Reachability
+  - BUTTSDKFramework/Strategy/Lite (1.46.2.7-premium):
+    - BUTTSDKFramework/LivePlayer/Lite
+    - BUTTSDKFramework/Strategy/Core
+  - BUTTSDKFramework/Tools (1.46.2.7-premium):
+    - BUTTSDKFramework/SSL
+  - BUTTSDKFramework/TTFFmpeg/Base (1.46.2.7-premium):
+    - BUTTSDKFramework/Tools
+  - BUTTSDKFramework/TTFFmpeg/LiveLite (1.46.2.7-premium):
+    - BUTTSDKFramework/TTFFmpeg/Base
   - GDTMobSDK (4.15.41)
+  - GMGdtAdapter-Beta (4.15.41.1):
+    - Ads-CN-Beta/CSJMediation-Only (>= 7.1.0.1)
+  - GMKsAdapter-Beta (4.6.30.1.1):
+    - Ads-CN-Beta/CSJMediation-Only (>= 7.1.0.1)
   - KSAdSDK (4.6.30.1)
-  - TxAdSupportKit (4.15.10):
+  - TxAdSupportKit (4.15.15):
+    - Ads-CN-Beta (= 7.1.0.3)
+    - Ads-CN-Beta/CSJMediation (= 7.1.0.3)
     - GDTMobSDK (= 4.15.41)
+    - GMGdtAdapter-Beta (= 4.15.41.1)
+    - GMKsAdapter-Beta (= 4.6.30.1.1)
     - KSAdSDK (= 4.6.30.1)
 
 DEPENDENCIES:
@@ -10,7 +65,11 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Ads-CN-Beta
+    - BUTTSDKFramework
     - GDTMobSDK
+    - GMGdtAdapter-Beta
+    - GMKsAdapter-Beta
     - KSAdSDK
 
 EXTERNAL SOURCES:
@@ -18,10 +77,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Ads-CN-Beta: e9367d3347dd466522eac7fe0eded97bda8555eb
+  BUTTSDKFramework: b5d45b40003335843f05088c2373cef0b5638a9e
   GDTMobSDK: d549f5d0c06c2534dbce08cfb21e2266975b7f5a
+  GMGdtAdapter-Beta: a58f2ca987017f38e99d5acb122430cfed4e6070
+  GMKsAdapter-Beta: f0ccc10a345a384fade84dfed56e238013405145
   KSAdSDK: 15d8613714c8f1728b0bd6d461a3d7e316e61982
-  TxAdSupportKit: bf3313da8f9bf4b0629c90e1e7c5e1ee20c211b2
+  TxAdSupportKit: b447cb39e81883a49392f7ea18504935c67ce9fc
 
-PODFILE CHECKSUM: 4af127de9f55d410b31bf1467f6b66c2ab15ff13
+PODFILE CHECKSUM: 1cb239fb08f14d47317403449408f7ed60b142df
 
 COCOAPODS: 1.16.2
