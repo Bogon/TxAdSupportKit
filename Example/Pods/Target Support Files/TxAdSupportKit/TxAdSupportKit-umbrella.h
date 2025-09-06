@@ -10,8 +10,6 @@
 #endif
 #endif
 
-#import "TxAdSupportKit.h"
-
 FOUNDATION_EXPORT double TxAdSupportKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char TxAdSupportKitVersionString[];
 

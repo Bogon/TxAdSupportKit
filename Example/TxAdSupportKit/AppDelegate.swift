@@ -22,9 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("type: \(type)")
         }
         
-        TxAdSupportInitProvider.sdk(bundleId: "com.Wmfmenko.CLD.Test", appid: "572845306") { success in
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.rootViewController = ViewController()
+        window?.makeKeyAndVisible()
+        
+        TxAdSupportInitProvider.sdk(bundleId: "", appid: "") { success in
             if success {
-                self.adProvider.showInterstitialFull(adId: "103588785511")
+                self.adProvider.showInterstitialFull(adId: "")
             }
         }
         
