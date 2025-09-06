@@ -7,7 +7,6 @@
 
 import Foundation
 import BUAdSDK
-import ObjectiveC.runtime
 
 public enum TxAdSupportResposeType: Int {
     case loadFail = 0
@@ -16,11 +15,7 @@ public enum TxAdSupportResposeType: Int {
 }
 
 public class TxAdSupportInitProvider: NSObject {
-    public static func sdk(bundleId: String = "", appid: String, _ completed: @escaping (Bool) -> Void) {
-        if !bundleId.isEmpty {
-            Bundle.enableCustomBundleID(bundleId)
-        }
-        print(Bundle.main.bundleIdentifier ?? "nil") 
+    public static func sdk(appid: String, _ completed: @escaping (Bool) -> Void) {
         if !appid.isEmpty {
             let config: BUAdSDKConfiguration = BUAdSDKConfiguration.configuration()
             config.appID = appid
@@ -45,7 +40,6 @@ extension UIViewController {
         return ptCurrentVC()?.navigationController
     }
     
-
     class func ptCurrentVC() -> UIViewController? {
         var window: UIWindow?
         
@@ -105,77 +99,5 @@ extension UIViewController {
         }
         
         return window
-    }
-}
-
-
-extension Bundle {
-    // 用 UInt8 来做唯一 key，避免 String 带来的 UnsafeRawPointer 警告
-    private struct AssociatedKeys {
-        static var customBundleID: UInt8 = 0
-    }
-
-    // MARK: - 动态存储的 customBundleID
-    private var customBundleID: String? {
-        get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.customBundleID) as? String
-        }
-        set {
-            objc_setAssociatedObject(self,
-                                     &AssociatedKeys.customBundleID,
-                                     newValue,
-                                     .OBJC_ASSOCIATION_COPY_NONATOMIC)
-        }
-    }
-
-    // MARK: - 启用自定义 BundleID
-    static func enableCustomBundleID(_ newID: String) {
-        // 执行一次 swizzling
-        _ = swizzleMethods
-        Bundle.main.customBundleID = newID
-    }
-
-    // MARK: - 还原
-    private static func resetCustomBundleID() {
-        Bundle.main.customBundleID = nil
-    }
-
-    // MARK: - Swizzling
-    private static let swizzleMethods: Void = {
-        let cls = Bundle.self
-
-        func swizzle(_ original: Selector, _ swizzled: Selector) {
-            if let m1 = class_getInstanceMethod(cls, original),
-               let m2 = class_getInstanceMethod(cls, swizzled) {
-                method_exchangeImplementations(m1, m2)
-            }
-        }
-
-        swizzle(#selector(getter: bundleIdentifier),
-                #selector(swizzled_bundleIdentifier))
-        swizzle(#selector(object(forInfoDictionaryKey:)),
-                #selector(swizzled_object(forInfoDictionaryKey:)))
-        swizzle(#selector(getter: infoDictionary),
-                #selector(swizzled_infoDictionary))
-    }()
-
-    // MARK: - Hook 方法
-    @objc private func swizzled_bundleIdentifier() -> String? {
-        return customBundleID ?? swizzled_bundleIdentifier()
-    }
-
-    @objc private func swizzled_object(forInfoDictionaryKey key: String) -> Any? {
-        if key == "CFBundleIdentifier", let id = customBundleID {
-            return id
-        }
-        return swizzled_object(forInfoDictionaryKey: key)
-    }
-
-    @objc private func swizzled_infoDictionary() -> [String: Any]? {
-        var dict = swizzled_infoDictionary() ?? [:]
-        if let id = customBundleID {
-            dict["CFBundleIdentifier"] = id
-        }
-        return dict
     }
 }

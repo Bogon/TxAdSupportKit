@@ -36,8 +36,8 @@ public final class TxAdSupportProvider: NSObject {
         
         // 初始化 ADSDK
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdInitliazeRequest"), object: nil, queue: .main) { notification in
-            if let userInfo = notification.userInfo, let appId = userInfo["AppId"] as? String, let customBundleId = userInfo["CustomBundleId"] as? String {
-                TxAdSupportInitProvider.sdk(bundleId: customBundleId, appid: appId) { isSuccess in
+            if let userInfo = notification.userInfo, let appId = userInfo["AppId"] as? String {
+                TxAdSupportInitProvider.sdk(appid: appId) { isSuccess in
                     NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdInitliazeReponse"), object: nil, userInfo: [
                         "isSuccess": isSuccess
                     ])
