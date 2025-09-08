@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TxAdSupportKit'
-  s.version          = '4.16.2'
+  s.version          = '4.16.6'
   s.summary          = 'TxAdSupportKit 是一个 CSJGromre 的集成 SDK。'
 
 # This description is used to generate tags and improve search results.

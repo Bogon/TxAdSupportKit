@@ -66,8 +66,8 @@ public final class TxAdSupportProvider: NSObject {
         }
         
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdInterstHalfRequest"), object: nil, queue: .main) { notification in
-            if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String {
-                self.halfAdProvider.showInterstitialHalf(adId: adId)
+            if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String, let position = userInfo["position"] as? Int   {
+                self.halfAdProvider.showInterstitialHalf(adId: adId, position: position)
             }
         }
         
@@ -86,7 +86,7 @@ public final class TxAdSupportProvider: NSObject {
         }
         
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdBannerRequest"), object: nil, queue: .main) { notification in
-            if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String {
+            if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String{
                 self.bannerProvider.showBanner(adId: adId)
             }
         }

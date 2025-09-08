@@ -103,12 +103,12 @@ pod lib lint TxAdSupportKit.podspec \
   
 
 git add .
-git commit -m "release 4.16.2"
+git commit -m "release 4.16.6"
 
 
 git push origin main
 
-git tag 4.16.2
+git tag 4.16.6
 git push origin --tags
 
 pod trunk push TxAdSupportKit.podspec --allow-warnings
