@@ -83,6 +83,11 @@ git commit -m "Initial commit with LFS"
 # 5. Push
 git push origin main
 
+source 'https://github.com/CocoaPods/Specs.git'
+
+TODO
+1. 插半屏添加位置，回调处理
+
 
 TxAdSupportKit is available under the MIT license. See the LICENSE file for more info.
 
@@ -98,12 +103,12 @@ pod lib lint TxAdSupportKit.podspec \
   
 
 git add .
-git commit -m "release 4.16.1"
+git commit -m "release 4.16.2"
 
 
 git push origin main
 
-git tag 4.16.1
+git tag 4.16.2
 git push origin --tags
 
 pod trunk push TxAdSupportKit.podspec --allow-warnings

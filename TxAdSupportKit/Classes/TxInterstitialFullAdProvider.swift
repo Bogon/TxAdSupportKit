@@ -11,6 +11,7 @@ import BUAdSDK
 public
 class TxInterstitialFullAdProvider: NSObject, BUNativeExpressFullscreenVideoAdDelegate {
     
+   
     var interstitialFullAd: BUNativeExpressFullscreenVideoAd?
     public var interstitialFullCompleted:((_ type: TxAdSupportResposeType)->Void)?
     

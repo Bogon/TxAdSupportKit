@@ -52,7 +52,7 @@ PODS:
   - GMKsAdapter-Beta (4.6.30.1.1):
     - Ads-CN-Beta/CSJMediation-Only (>= 7.1.0.1)
   - KSAdSDK (4.6.30.1)
-  - TxAdSupportKit (4.15.15):
+  - TxAdSupportKit (4.16.2):
     - Ads-CN-Beta (= 7.1.0.3)
     - Ads-CN-Beta/CSJMediation (= 7.1.0.3)
     - GDTMobSDK (= 4.15.41)
@@ -83,7 +83,7 @@ SPEC CHECKSUMS:
   GMGdtAdapter-Beta: a58f2ca987017f38e99d5acb122430cfed4e6070
   GMKsAdapter-Beta: f0ccc10a345a384fade84dfed56e238013405145
   KSAdSDK: 15d8613714c8f1728b0bd6d461a3d7e316e61982
-  TxAdSupportKit: b447cb39e81883a49392f7ea18504935c67ce9fc
+  TxAdSupportKit: beff9292405ba90c79f1c5075335a1905549dc86
 
 PODFILE CHECKSUM: 1cb239fb08f14d47317403449408f7ed60b142df
 

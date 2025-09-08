@@ -11,11 +11,13 @@ import BUAdSDK
 public
 class TxInterstitialHalfAdProvider: NSObject, BUNativeExpressFullscreenVideoAdDelegate {
     
+    var positionType: Int = 0
     var interstitialHalfAd: BUNativeExpressFullscreenVideoAd?
-    public var interstitialHalfCompleted:((_ type: TxAdSupportResposeType)->Void)?
+    public var interstitialHalfCompleted:((_ position: Int, _ type: TxAdSupportResposeType)->Void)?
     
-    public func showInterstitialHalf(adId: String) {
+    public func showInterstitialHalf(adId: String, position: Int = 0) {
         if !adId.isEmpty {
+            positionType = position
             let slot: BUAdSlot = BUAdSlot.init()
             slot.id = adId
             slot.mediation.mutedIfCan = true
@@ -32,7 +34,7 @@ class TxInterstitialHalfAdProvider: NSObject, BUNativeExpressFullscreenVideoAdDe
     }
     
     public func nativeExpressFullscreenVideoAd(_ fullscreenVideoAd: BUNativeExpressFullscreenVideoAd, didFailWithError error: (any Error)?) {
-        interstitialHalfCompleted?(.loadFail)
+        interstitialHalfCompleted?(positionType, .loadFail)
     }
     
     public func nativeExpressFullscreenVideoAdViewRenderSuccess(_ rewardedVideoAd: BUNativeExpressFullscreenVideoAd) {
@@ -60,7 +62,7 @@ class TxInterstitialHalfAdProvider: NSObject, BUNativeExpressFullscreenVideoAdDe
     }
     
     public func nativeExpressFullscreenVideoAdDidClickSkip(_ fullscreenVideoAd: BUNativeExpressFullscreenVideoAd) {
-        interstitialHalfCompleted?(.didClose)
+        interstitialHalfCompleted?(positionType, .didClose)
     }
     
     public func nativeExpressFullscreenVideoAdWillClose(_ fullscreenVideoAd: BUNativeExpressFullscreenVideoAd) {
@@ -68,7 +70,7 @@ class TxInterstitialHalfAdProvider: NSObject, BUNativeExpressFullscreenVideoAdDe
     }
     
     public func nativeExpressFullscreenVideoAdDidClose(_ fullscreenVideoAd: BUNativeExpressFullscreenVideoAd) {
-        interstitialHalfCompleted?(.didClose)
+        interstitialHalfCompleted?(positionType,.didClose)
     }
     
     public func nativeExpressFullscreenVideoAdDidPlayFinish(_ fullscreenVideoAd: BUNativeExpressFullscreenVideoAd, didFailWithError error: (any Error)?) {

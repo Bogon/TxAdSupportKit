@@ -1,6 +1,6 @@
 {
   "name": "TxAdSupportKit",
-  "version": "4.15.15",
+  "version": "4.16.2",
   "summary": "TxAdSupportKit 是一个 CSJGromre 的集成 SDK。",
   "description": "TxAdSupportKit 是一个 SDK 广告类库，方便集成穿山甲、优量汇、快手等。",
   "homepage": "https://github.com/Bogon/TxAdSupportKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Bogon/TxAdSupportKit.git",
-    "tag": "4.15.15"
+    "tag": "4.16.2"
   },
   "static_framework": true,
   "platforms": {
@@ -25,6 +25,9 @@
     "TxAdSupportKit": [
       "TxAdSupportKit/Assets/PrivacyInfo.xcprivacy"
     ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "dependencies": {
     "Ads-CN-Beta": [
