@@ -8,20 +8,14 @@
 import UIKit
 import BUAdSDK
 
-public enum TxAdFeedFlowPositionType: Int {
-    case vod = 0
-    case search
-    case mine
-}
-
 public
 class TxFeedFlowAdProvider: NSObject, BUNativeExpressAdViewDelegate, BUCustomEventProtocol {
 
-    var positionType: TxAdFeedFlowPositionType = .vod
+    var positionType: Int = 0
     var feedFlowAd: BUNativeExpressAdManager?
-    public var feedFlowCompleted:((_ position: TxAdFeedFlowPositionType, _ type: TxAdSupportResposeType, _ view: UIView?)->Void)?
+    public var feedFlowCompleted:((_ position: Int, _ type: TxAdSupportResposeType, _ view: UIView?)->Void)?
     
-    public func showFeedFlow(adId: String, position: TxAdFeedFlowPositionType = .vod) {
+    public func showFeedFlow(adId: String, position: Int = 0) {
         if !adId.isEmpty {
             positionType = position
             let slot: BUAdSlot = BUAdSlot.init()

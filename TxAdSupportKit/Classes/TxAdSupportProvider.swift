@@ -94,20 +94,20 @@ public final class TxAdSupportProvider: NSObject {
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdFeedFlowResponse"), object: nil, userInfo: [
                     "type": type.rawValue,
                     "view": view,
-                    "position": position.rawValue
+                    "position": position
                 ])
             } else {
                 NotificationCenter.default.post(name: Notification.Name(rawValue: "TxAdFeedFlowResponse"), object: nil, userInfo: [
                     "type": type.rawValue,
                     "view": "",
-                    "position": position.rawValue
+                    "position": position
                 ])
             }
         }
         
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TxAdFeedFlowRequest"), object: nil, queue: .main) { notification in
             if let userInfo = notification.userInfo, let adId = userInfo["adId"] as? String, let position = userInfo["position"] as? Int {
-                self.feedFlowAdProvider.showFeedFlow(adId: adId, position: TxAdFeedFlowPositionType(rawValue: position) ?? .vod)
+                self.feedFlowAdProvider.showFeedFlow(adId: adId, position: position)
             }
         }
         

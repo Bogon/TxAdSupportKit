@@ -98,14 +98,15 @@ pod lib lint TxAdSupportKit.podspec \
   
 
 git add .
-git commit -m "release 4.15.15"
+git commit -m "release 4.16.1"
 
 
 git push origin main
 
-git tag 4.15.15
+git tag 4.16.1
 git push origin --tags
 
 pod trunk push TxAdSupportKit.podspec --allow-warnings
+ COCOAPODS_DISABLE_STATS=1 pod trunk push TxAdSupportKit.podspec --allow-warnings --skip-import-validation
 
 pod repo update --verbose
